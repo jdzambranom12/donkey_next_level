@@ -31,10 +31,11 @@ Juego de Mario que consiste en esquivar de una manera diferente
 5. **Requisitos técnicos**
 
 * **Hardware**: Arduino Esplora (acelerómetro, micrófono, botones).
-* **Software**: Processing o Unity para visualización; comunicación serial.
-* **Entradas**: inclinación, botón, micrófono.
-* **Salida**: pantalla en PC o proyector.
+* **Software**:
 
----
+  * **Recepción de datos**: El sistema debe poder recibir datos desde el Arduino Esplora conectado a un **puerto COM** (por ejemplo, **COM12**).
+  * **Intermediario**: Se requiere un servidor **Node.js** que utilice la librería **p5.serialport** para la comunicación serial.
+  * **Procesamiento y envío**: El servidor Node.js procesa los datos recibidos y los envía al **navegador** donde se ejecutará el juego (p. ej., con **p5.js**).
+* **Entradas**: inclinación (movimiento), botón (salto), micrófono (disparo).
+* **Salida**: visualización en el navegador, pantalla PC o proyector.
 
-¿Quieres que lo haga **en un formato más formal (tipo documento con secciones claras)** o que lo **convierta en un diagrama visual con el nombre Donkey Next Level y las conexiones del Arduino**?
