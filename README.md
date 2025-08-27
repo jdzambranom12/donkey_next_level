@@ -1,7 +1,7 @@
 # donkey_next_level
 Juego de Mario que consiste en esquivar de una manera diferente 
 
-![Mario](1Boceto.pnh)
+![Mario](1Boceto.png)
 ---
 
 ### **PRD: Prototipo *Donkey Next Level***
