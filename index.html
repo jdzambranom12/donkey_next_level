@@ -6,20 +6,43 @@
     <style>
         body {
             margin: 0;
+            padding: 20px;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             min-height: 100vh;
             background: #2c3e50;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        #gameContainer {
+            margin-top: 20px;
         }
         canvas {
             border: 4px solid #e74c3c;
+            background: #34495e;
+        }
+        #debug {
+            margin-top: 10px;
+            padding: 10px;
+            background: rgba(0,0,0,0.5);
+            border-radius: 5px;
         }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <!-- Carga de p5.js desde CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <!-- Carga de p5.serialport -->
     <script src="https://cdn.jsdelivr.net/npm/p5.serialport@0.0.1/lib/p5.serialport.js"></script>
 </head>
 <body>
+    <h1>Donkey Next Level</h1>
+    <div id="gameContainer">
+        <!-- El canvas de p5.js se creará aquí -->
+    </div>
+    <div id="debug">
+        Estado: <span id="status">Cargando...</span>
+    </div>
+    <!-- Carga del sketch después de las librerías -->
     <script src="sketch.js"></script>
 </body>
 </html>
